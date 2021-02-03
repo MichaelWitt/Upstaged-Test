@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Employee-Stardirectory/static/css/main.070d6302.chunk.css",
+    "main.js": "/Employee-Stardirectory/static/js/main.be70e8eb.chunk.js",
+    "main.js.map": "/Employee-Stardirectory/static/js/main.be70e8eb.chunk.js.map",
+    "runtime-main.js": "/Employee-Stardirectory/static/js/runtime-main.7c619228.js",
+    "runtime-main.js.map": "/Employee-Stardirectory/static/js/runtime-main.7c619228.js.map",
+    "static/js/2.ddd3ff36.chunk.js": "/Employee-Stardirectory/static/js/2.ddd3ff36.chunk.js",
+    "static/js/2.ddd3ff36.chunk.js.map": "/Employee-Stardirectory/static/js/2.ddd3ff36.chunk.js.map",
+    "static/css/3.150d169a.chunk.css": "/Employee-Stardirectory/static/css/3.150d169a.chunk.css",
+    "static/js/3.5c88bbdd.chunk.js": "/Employee-Stardirectory/static/js/3.5c88bbdd.chunk.js",
+    "static/js/3.5c88bbdd.chunk.js.map": "/Employee-Stardirectory/static/js/3.5c88bbdd.chunk.js.map",
+    "static/js/4.7423ffad.chunk.js": "/Employee-Stardirectory/static/js/4.7423ffad.chunk.js",
+    "static/js/4.7423ffad.chunk.js.map": "/Employee-Stardirectory/static/js/4.7423ffad.chunk.js.map",
+    "static/js/5.23c191cf.chunk.js": "/Employee-Stardirectory/static/js/5.23c191cf.chunk.js",
+    "static/js/5.23c191cf.chunk.js.map": "/Employee-Stardirectory/static/js/5.23c191cf.chunk.js.map",
+    "static/js/6.07970ce3.chunk.js": "/Employee-Stardirectory/static/js/6.07970ce3.chunk.js",
+    "static/js/6.07970ce3.chunk.js.map": "/Employee-Stardirectory/static/js/6.07970ce3.chunk.js.map",
+    "index.html": "/Employee-Stardirectory/index.html",
+    "static/css/3.150d169a.chunk.css.map": "/Employee-Stardirectory/static/css/3.150d169a.chunk.css.map",
+    "static/css/main.070d6302.chunk.css.map": "/Employee-Stardirectory/static/css/main.070d6302.chunk.css.map",
+    "static/js/2.ddd3ff36.chunk.js.LICENSE.txt": "/Employee-Stardirectory/static/js/2.ddd3ff36.chunk.js.LICENSE.txt",
+    "static/js/3.5c88bbdd.chunk.js.LICENSE.txt": "/Employee-Stardirectory/static/js/3.5c88bbdd.chunk.js.LICENSE.txt",
+    "static/js/4.7423ffad.chunk.js.LICENSE.txt": "/Employee-Stardirectory/static/js/4.7423ffad.chunk.js.LICENSE.txt",
+    "static/js/5.23c191cf.chunk.js.LICENSE.txt": "/Employee-Stardirectory/static/js/5.23c191cf.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Employee-Stardirectory/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c619228.js",
+    "static/css/3.150d169a.chunk.css",
+    "static/js/3.5c88bbdd.chunk.js",
+    "static/css/main.070d6302.chunk.css",
+    "static/js/main.be70e8eb.chunk.js"
+  ]
+}
