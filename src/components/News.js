@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import MaterialTable from "material-table";
 import API from "../utils/API";
 
-class EmployeeTable extends Component {
+class News extends Component {
   state = {
     filteredUsers: [],
   };
@@ -11,8 +11,9 @@ class EmployeeTable extends Component {
 
   componentDidMount() {
     API.getUsers().then((results) => {
-      this.users = results.data.results;
+      this.users = results.data;
       console.log("this.users:", this.users);
+      console.log("this.users:", this.users.articles[0].author);
       this.setState({
         filteredUsers: this.users,
       });
@@ -41,7 +42,7 @@ class EmployeeTable extends Component {
           data={this.state.filteredUsers.map((user) => {
             let tableData = {
               star: `${user.picture.medium}`,
-              name: `${user.name.first + " " + user.name.last}`,
+              name: `${user.articles[0].author}`,
               email: `${user.email}`,
               phone: `${user.phone}`,
               username: `${user.login.username}`,
@@ -63,4 +64,4 @@ class EmployeeTable extends Component {
   }
 }
 
-export default EmployeeTable;
+export default News;

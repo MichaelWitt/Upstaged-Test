@@ -9,7 +9,7 @@ const styles = {
 function Header() {
   return (
     <header className="header">
-      <h1 style={styles.headline}>Employee Stardirectory</h1>
+      <h1 style={styles.headline}>Upstaged</h1>
     </header>
   );
 }
