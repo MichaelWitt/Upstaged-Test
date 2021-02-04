@@ -11,9 +11,8 @@ class News extends Component {
 
   componentDidMount() {
     API.getUsers().then((results) => {
-      this.users = results.data;
+      this.users = results.data.articles;
       console.log("this.users:", this.users);
-      console.log("this.users:", this.users.articles[0].author);
       this.setState({
         filteredUsers: this.users,
       });
@@ -26,28 +25,26 @@ class News extends Component {
         <MaterialTable
           columns={[
             {
-              title: "Star",
-              field: "star",
+              title: "Image",
+              field: "image",
               render: (rowData) => (
                 <img src={rowData.star} alt={rowData.star} />
               ),
             },
-            { title: "Name", field: "name" },
-            { title: "Email", field: "email" },
-            { title: "Phone", field: "phone" },
-            { title: "Username", field: "username" },
-            { title: "Location", field: "location" },
-            { title: "Age", field: "age" },
+            { title: "Content", field: "content" },
+            { title: "Description", field: "description" },
+            { title: "Source", field: "source" },
+            { title: "Author", field: "author" },
+            { title: "Date", field: "date" },
           ]}
           data={this.state.filteredUsers.map((user) => {
             let tableData = {
-              star: `${user.picture.medium}`,
-              name: `${user.articles[0].author}`,
-              email: `${user.email}`,
-              phone: `${user.phone}`,
-              username: `${user.login.username}`,
-              location: `${user.location.city + ", " + user.location.state}`,
-              age: `${user.dob.age}`,
+              // image: `${user.urlToImage}`,
+              content: `${user.content}`,
+              description: `${user.description}`,
+              source: `${user.source.name}`,
+              author: `${user.author}`,
+              date: `${user.publishedAt}`,
             };
             return tableData;
           })}
