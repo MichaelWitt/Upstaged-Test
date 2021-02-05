@@ -28,11 +28,13 @@ class News extends Component {
               title: "Articles",
               field: "image",
               render: (rowData) => (
-                <img
-                  src={rowData.image}
-                  alt={rowData.image}
-                  style={{ width: 350, height: 200 }}
-                />
+                <a href={rowData.website} target="_blank" rel="noreferrer">
+                  <img
+                    src={rowData.image}
+                    alt={rowData.image}
+                    style={{ width: 350, height: 200 }}
+                  />
+                </a>
               ),
             },
             {
@@ -48,6 +50,7 @@ class News extends Component {
           data={this.state.filteredUsers.map((user) => {
             let tableData = {
               image: `${user.urlToImage}`,
+              website: `${user.url}`,
               description: `${user.description}`,
               content: `${user.content}`,
               source: `${user.source.name}`,
@@ -61,7 +64,7 @@ class News extends Component {
             emptyRowsWhenPaging: true,
             pageSizeOptions: [6, 12, 20, 50],
           }}
-          title="On Broadway"
+          title="Broadway"
         />
       </div>
     );
