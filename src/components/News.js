@@ -25,10 +25,14 @@ class News extends Component {
         <MaterialTable
           columns={[
             {
-              title: "Image",
+              title: "Articles",
               field: "image",
               render: (rowData) => (
-                <img src={rowData.star} alt={rowData.star} />
+                <img
+                  src={rowData.image}
+                  alt={rowData.image}
+                  style={{ width: 350, height: 200 }}
+                />
               ),
             },
             { title: "Content", field: "content" },
@@ -39,7 +43,7 @@ class News extends Component {
           ]}
           data={this.state.filteredUsers.map((user) => {
             let tableData = {
-              // image: `${user.urlToImage}`,
+              image: `${user.urlToImage}`,
               content: `${user.content}`,
               description: `${user.description}`,
               source: `${user.source.name}`,
@@ -54,7 +58,7 @@ class News extends Component {
             emptyRowsWhenPaging: true,
             pageSizeOptions: [6, 12, 20, 50],
           }}
-          title="⭑"
+          title="Broadway"
         />
       </div>
     );
