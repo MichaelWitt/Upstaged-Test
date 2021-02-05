@@ -35,10 +35,14 @@ class News extends Component {
                 />
               ),
             },
-            { title: "Content", field: "content" },
-            { title: "Description", field: "description" },
+            {
+              title: "Content",
+              field: "content",
+              headerStyle: { minWidth: 300 },
+              cellStyle: { minWidth: 300 },
+            },
+            { title: "Headline", field: "description" },
             { title: "Source", field: "source" },
-            { title: "Author", field: "author" },
             { title: "Date", field: "date" },
           ]}
           data={this.state.filteredUsers.map((user) => {
@@ -47,7 +51,6 @@ class News extends Component {
               content: `${user.content}`,
               description: `${user.description}`,
               source: `${user.source.name}`,
-              author: `${user.author}`,
               date: `${user.publishedAt}`,
             };
             return tableData;
@@ -58,7 +61,7 @@ class News extends Component {
             emptyRowsWhenPaging: true,
             pageSizeOptions: [6, 12, 20, 50],
           }}
-          title="Broadway"
+          title="On Broadway"
         />
       </div>
     );
