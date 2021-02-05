@@ -64,7 +64,7 @@ class News extends Component {
             emptyRowsWhenPaging: true,
             pageSizeOptions: [6, 12, 20, 50],
           }}
-          title="Broadway"
+          title="News"
         />
       </div>
     );
