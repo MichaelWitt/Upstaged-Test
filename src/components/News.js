@@ -41,15 +41,15 @@ class News extends Component {
               headerStyle: { minWidth: 300 },
               cellStyle: { minWidth: 300 },
             },
-            { title: "Headline", field: "description" },
+            { title: "Details", field: "description" },
             { title: "Source", field: "source" },
             { title: "Date", field: "date" },
           ]}
           data={this.state.filteredUsers.map((user) => {
             let tableData = {
               image: `${user.urlToImage}`,
-              content: `${user.content}`,
               description: `${user.description}`,
+              content: `${user.content}`,
               source: `${user.source.name}`,
               date: `${user.publishedAt}`,
             };
