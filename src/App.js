@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import News from "./components/News";
 import "./components/style.css";
 
+console.log(process.env.REACT_APP_NEWS_API_KEY);
+
 function App() {
   return (
     <div>

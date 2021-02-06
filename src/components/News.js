@@ -48,6 +48,7 @@ class News extends Component {
             {
               title: "Date",
               field: "date",
+              defaultSort: "desc",
             },
           ]}
           data={this.state.filteredNews.map((news) => {

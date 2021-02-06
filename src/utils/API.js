@@ -1,9 +1,10 @@
 import axios from "axios";
 
-// const newsApiKey = process.env.API_KEY;
+// const newsApiKeyHidden = process.env.NEWS_API_KEY;
+
 const newsApiKey = "c20dd1de26954654be5226fb76eaa7f9";
 const NewsURL =
-  "https://newsapi.org/v2/everything?q=broadway&pageSize=100&apiKey=" +
+  "https://newsapi.org/v2/everything?q=broadway&pageSize=100&sortBy=relevancy&apiKey=" +
   `${newsApiKey}`;
 
 export default {
