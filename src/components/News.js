@@ -4,17 +4,17 @@ import API from "../utils/API";
 
 class News extends Component {
   state = {
-    filteredUsers: [],
+    filteredNews: [],
   };
 
-  users = [];
+  news = [];
 
   componentDidMount() {
-    API.getUsers().then((results) => {
-      this.users = results.data.articles;
-      console.log("this.users:", this.users);
+    API.getNews().then((results) => {
+      this.news = results.data.articles;
+      console.log("this.news:", this.news);
       this.setState({
-        filteredUsers: this.users,
+        filteredNews: this.news,
       });
     });
   }
@@ -45,16 +45,19 @@ class News extends Component {
             },
             { title: "Details", field: "description" },
             { title: "Source", field: "source" },
-            { title: "Date", field: "date" },
+            {
+              title: "Date",
+              field: "date",
+            },
           ]}
-          data={this.state.filteredUsers.map((user) => {
+          data={this.state.filteredNews.map((news) => {
             let tableData = {
-              image: `${user.urlToImage}`,
-              website: `${user.url}`,
-              description: `${user.description}`,
-              content: `${user.content}`,
-              source: `${user.source.name}`,
-              date: `${user.publishedAt}`,
+              image: `${news.urlToImage}`,
+              website: `${news.url}`,
+              description: `${news.description}`,
+              content: `${news.content}`,
+              source: `${news.source.name}`,
+              date: `${news.publishedAt.split(/[T ]/i, 1)[0]}`,
             };
             return tableData;
           })}
